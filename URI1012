@@ -1,0 +1,22 @@
+package curso.java.udemy;
+import java.util.Locale;
+import java.util.Scanner;
+
+public class exercicios1 {
+	public static void main(String[] args) {
+	Locale.setDefault(Locale.US);
+	
+Scanner input = new Scanner(System.in);
+	int codpeca1 = input.nextInt();
+	int qtpeca1 = input.nextInt();
+	double vlpeca1 = input.nextDouble();
+	int codpeca2 = input.nextInt();
+	int qtpeca2 = input.nextInt();
+	double vlpeca2 = input.nextDouble();
+	double total;
+		
+	total = qtpeca1 * vlpeca1 + qtpeca2  * vlpeca2;
+	System.out.printf("VALOR A PAGAR: %.2f%n", total);
+	
+	input.close();
+	}
